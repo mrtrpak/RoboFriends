@@ -1,9 +1,11 @@
 import React, { Component } from 'react';
 
+import './style.css';
+
 class TestComp extends Component {
   render() {
     return (
-      <div></div>
+      <div>HELLLLLLLOOOOOOO</div>
     )
   }
 };
