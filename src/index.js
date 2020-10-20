@@ -4,7 +4,6 @@ import * as serviceWorker from './serviceWorker';
 
 import Card from './Card';
 import './index.css';
-
 import 'tachyons';
 
 ReactDOM.render(
