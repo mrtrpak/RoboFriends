@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 
 import CardList from './CardList';
 import SearchBox from './SearchBox';
-import { robots } from './robots';
 
 import './App.css';
 
@@ -30,8 +29,8 @@ class App extends Component {
       return robot.name.toLowerCase().includes(this.state.searchField.toLowerCase());
     });
 
-    if (robots.length === 0) {
-      return <h1>LOADING</h1>
+    if (this.state.robots.length === 0) {
+      return <h1 className='tc'>LOADING</h1>
     } else {
       return (
         <div className='tc'>
