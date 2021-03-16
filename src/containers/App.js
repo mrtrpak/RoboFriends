@@ -25,17 +25,17 @@ export default function App() {
     return robot.name.toLowerCase().includes(searchField.toLowerCase());
   });
 
-    return !robots.length ? 
-      <h1 className='tc'>LOADING</h1> :
-       (
-        <div className='tc'>
-          <h1 className='f1'>RoboFriends</h1>
-          <SearchBox searchChange={onSearchChange} />
-          <Scroll>
-            <ErrorBoundary>
-              <CardList robots={filterRobots} />
-            </ErrorBoundary>
-          </Scroll>
-        </div>
-      );
+  return !robots.length ? 
+    <h1 className='tc'>LOADING</h1> :
+      (
+      <div className='tc'>
+        <h1 className='f1'>RoboFriends</h1>
+        <SearchBox searchChange={onSearchChange} />
+        <Scroll>
+          <ErrorBoundary>
+            <CardList robots={filterRobots} />
+          </ErrorBoundary>
+        </Scroll>
+      </div>
+    );
   };
