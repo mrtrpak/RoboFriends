@@ -28,5 +28,10 @@ export const robots = [
     id: 6,
     name: "Clementine Spring",
     email: "springClem@email.com"
+  },
+  {
+    id: 7,
+    name: "Morgan",
+    email: "more@email.com"
   }
 ]

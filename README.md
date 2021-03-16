@@ -11,4 +11,5 @@
 ## Tools Used
 
 - create-react-app
+- react hooks
 - tachyons
