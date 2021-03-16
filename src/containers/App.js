@@ -15,7 +15,7 @@ export default function App() {
     fetch('https://jsonplaceholder.typicode.com/users')
       .then(response => response.json())
       .then(users => setRobots(users));
-  });
+  }, []);
 
   const onSearchChange = (event) => {
     setSearchField(event.target.value);
